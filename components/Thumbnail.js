@@ -4,7 +4,6 @@ import { forwardRef } from "react";
 
 const Thumbnail = forwardRef(({ result }, ref) => {
   const BASE_URL = "https://image.tmdb.org/t/p/original/";
-
   return (
     <div
       ref={ref}
@@ -35,5 +34,6 @@ const Thumbnail = forwardRef(({ result }, ref) => {
     </div>
   );
 });
+Thumbnail.displayName = 'Thumbnail';
 
 export default Thumbnail;
